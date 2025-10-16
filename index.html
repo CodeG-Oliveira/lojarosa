@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loja Rosa — Moda Feminina Ijuí</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --pink:#ff4d8a;
+      --pink-dark:#e43d78;
+      --muted:#6c6c6c;
+    }
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+    .brand{font-weight:700; color:var(--pink);}
+    .hero{background:linear-gradient(180deg, rgba(255,77,138,0.08), rgba(255,77,138,0.02)); padding:3.5rem 0}
+    .card-img-top{object-fit:cover; height:220px}
+    .whatsapp-fab{position:fixed; right:20px; bottom:20px; z-index:1050; border-radius:50%; width:60px; height:60px; display:flex; align-items:center; justify-content:center; background:var(--pink); box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+    .whatsapp-fab img{width:32px}
+    .footer{background:#fff; border-top:1px solid #eee; padding:1.5rem 0}
+    @media (max-width:576px){ .card-img-top{height:160px} }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <div style="width:44px;height:44px;background:var(--pink);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700">LR</div>
+        <div>
+          <div class="brand">Loja Rosa</div>
+          <small class="text-muted">Moda Feminina · Ijuí</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#colecao">Coleção</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-6">Moda que combina com você</h1>
+          <p class="lead text-muted">Encontre peças modernas, conforto e estilo. Novas coleções toda semana — venha conferir!</p>
+          <p>
+            <a href="#colecao" class="btn btn-pink btn-lg" style="background:var(--pink); color:white; border:none">Ver coleção</a>
+            <a href="#contato" class="btn btn-outline-secondary btn-lg">Falar conosco</a>
+          </p>
+          <ul class="list-unstyled small text-muted">
+            <li>📍 Rua Barão do Rio Branco, 769 — Centro, Ijuí</li>
+            <li>🕒 Seg–Sex: 9h–18h · Sáb: 9h–13h</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block">
+          <img src="https://via.placeholder.com/720x420.png?text=Loja+Rosa+%7C+Colecao" alt="Banner" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- COLEÇÃO -->
+  <section id="colecao" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="h4">Coleção</h2>
+        <small class="text-muted">Novidades da semana</small>
+      </div>
+      <div class="row g-3">
+        <!-- Produto 1 -->
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x300.png?text=Vestido+1" class="card-img-top" alt="Vestido 1">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Vestido Floral</h6>
+              <p class="small text-muted mb-1">Tamanhos P–G</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">R$ 99,90</span>
+                <a href="https://wa.me/5554984425687?text=Ol%C3%A1%20Loja%20Rosa%2C%20quero%20saber%20mais%20sobre%20o%20Vestido%20Floral" class="btn btn-sm" style="color:var(--pink)">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Produto 2 -->
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x300.png?text=Blusa+2" class="card-img-top" alt="Blusa 2">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Blusa Casual</h6>
+              <p class="small text-muted mb-1">Várias cores</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">R$ 59,90</span>
+                <a href="https://wa.me/5554984425687?text=Ol%C3%A1%20Loja%20Rosa%2C%20quero%20saber%20mais%20sobre%20a%20Blusa%20Casual" class="btn btn-sm" style="color:var(--pink)">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Produto 3 -->
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x300.png?text=Saia+3" class="card-img-top" alt="Saia 3">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Saia Midi</h6>
+              <p class="small text-muted mb-1">Estampas variadas</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">R$ 79,90</span>
+                <a href="https://wa.me/5554984425687?text=Ol%C3%A1%20Loja%20Rosa%2C%20quero%20saber%20mais%20sobre%20a%20Saia%20Midi" class="btn btn-sm" style="color:var(--pink)">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Produto 4 -->
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x300.png?text=Acess%C3%B3rios" class="card-img-top" alt="Acessórios">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Acessórios</h6>
+              <p class="small text-muted mb-1">Brincos e bolsas</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">R$ 39,90</span>
+                <a href="https://wa.me/5554984425687?text=Ol%C3%A1%20Loja%20Rosa%2C%20quero%20saber%20mais%20sobre%20os%20acess%C3%B3rios" class="btn btn-sm" style="color:var(--pink)">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#contato" class="btn btn-outline-secondary">Ver mais produtos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3>Sobre a Loja Rosa</h3>
+          <p class="text-muted">A Loja Rosa oferece moda feminina com atenção aos detalhes e atendimento próximo. Trabalhamos com peças selecionadas e atendimento personalizado para encontrar o look perfeito.</p>
+          <ul class="list-unstyled small text-muted">
+            <li>✔ Atendimento presencial e por WhatsApp</li>
+            <li>✔ Troca facilitada</li>
+            <li>✔ Novas peças toda semana</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="https://via.placeholder.com/600x380.png?text=Loja+Rosa" class="img-fluid rounded shadow-sm" alt="Sobre Loja Rosa">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h4>Fale com a Loja Rosa</h4>
+          <p class="text-muted">Tem uma dúvida ou quer encomendar? Mande mensagem pelo WhatsApp ou passe na loja.</p>
+
+          <ul class="list-unstyled">
+            <li><strong>Endereço:</strong> Rua Barão do Rio Branco, 769 – Centro, Ijuí</li>
+            <li><strong>Telefone/WhatsApp:</strong> <a href="tel:+55333326055">(55) 3332-6055</a> • <a href="tel:+5554984425687">(55) 9 8442-5687</a></li>
+            <li><strong>Horário:</strong> Seg–Sex 9h–18h, Sábado 9h–13h</li>
+          </ul>
+
+          <p class="mt-3">
+            <a href="https://wa.me/5554984425687?text=Ol%C3%A1%20Loja%20Rosa%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" class="btn btn-lg" style="background:var(--pink); color:#fff; border:none">Enviar WhatsApp</a>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+            <!-- Embed Google Maps: troque o src pelo embed real do Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.133204218982!2d-53.91370398801638!3d-28.385044456225923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fc2d61e6e34803%3A0x174eaed4d8bdbf30!2sR.%20Bar%C3%A3o%20do%20Rio%20Branco%2C%20769%20-%20Centro%2C%20Iju%C3%AD%20-%20RS%2C%2098700-000!5e0!3m2!1spt-BR!2sbr!4v1760360897702!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="mb-1 small text-muted">© Loja Rosa — Moda Feminina · Ijuí</p>
+      <p class="small text-muted">Desenvolvido por Gabriel — <a href="#">Ver portfólio</a></p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a class="whatsapp-fab" href="https://wa.me/5554984425687?text=Ol%C3%A1%20Loja%20Rosa" target="_blank" aria-label="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target=document.querySelector(this.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      })
+    });
+  </script>
+</body>
+</html>
